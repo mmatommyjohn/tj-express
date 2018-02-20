@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sample</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113686553-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-113686553-3');
-  </script>
 </head>
+
 <body>
-  
+  <script type="text/javascript">
+    var utag_data = {
+      title: "", // 
+      page_type: "" // 
+    }
+  </script>
+
+  <!-- Loading script asynchronously -->
+  <script type="text/javascript">
+    (function (a, b, c, d) {
+      a = '//tags.tiqcdn.com/utag/tommyjohn/internal-developer/dev/utag.js';
+      b = document;
+      c = 'script';
+      d = b.createElement(c);
+      d.src = a;
+      d.type = 'text/java' + c;
+      d.async = true;
+      a = b.getElementsByTagName(c)[0];
+      a.parentNode.insertBefore(d, a);
+    })();
+  </script>
+  <h1>Sample</h1>
 </body>
+
 </html>
