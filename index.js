@@ -17,6 +17,9 @@ const productPath = path.join(__dirname, "pages", "product.html");
 app.get("/product", (req, res) => res.sendFile(productPath));
 
 const customPath = path.join(__dirname, "pages", "custom.html");
-app.get("/custom", (req, res) => res.send("Hello World!"));
+app.get("/custom", (req, res) => res.sendFile(customPath));
+
+const samplePath = path.join(__dirname, "pages", "sample.html");
+app.get("/sample", (req, res) => res.sendFile(samplePath));
 
 app.listen(port, () => console.log("Example app listening on port", port));
