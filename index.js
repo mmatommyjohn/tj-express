@@ -19,6 +19,9 @@ app.get("/product", (req, res) => res.sendFile(productPath));
 const customPath = path.join(__dirname, "pages", "custom.html");
 app.get("/custom", (req, res) => res.sendFile(customPath));
 
+const cartPath = path.join(__dirname, "pages", "cart.html");
+app.get("/cart", (req, res) => res.sendFile(cartPath));
+
 const samplePath = path.join(__dirname, "pages", "sample.html");
 app.get("/sample", (req, res) => res.sendFile(samplePath));
 
