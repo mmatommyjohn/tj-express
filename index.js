@@ -9,6 +9,7 @@ app.use(favicon(faviconPath));
 
 const homePath = path.join(__dirname, "pages", "home.html");
 app.get("/", (req, res) => res.sendFile(homePath));
+app.get("/home", (req, res) => res.sendFile(homePath));
 
 const categoryPath = path.join(__dirname, "pages", "category.html");
 app.get("/category", (req, res) => res.sendFile(categoryPath));
